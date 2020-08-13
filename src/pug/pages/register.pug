@@ -8,7 +8,7 @@ block content
                     .card-header
                         h3.text-center.font-weight-light.my-4 Create Account
                     .card-body
-                        form
+                        form(action-xhr="https://autorizador.herokuapp.com/authenticate",method="get") 
                             .form-row
                                 .col-md-6
                                     .form-group
@@ -31,7 +31,7 @@ block content
                                         label.small.mb-1(for='inputConfirmPassword') Confirm Password
                                         input#inputConfirmPassword.form-control.py-4(type='password', placeholder='Confirm password')
                             .form-group.mt-4.mb-0
-                                a.btn.btn-primary.btn-block(href='login.html') Create Account
+                                button.btn.btn-primary.btn-block(type='submit') Create Account
                     .card-footer.text-center
                         .small
                             a(href='register.html') Have an account? Go to login
