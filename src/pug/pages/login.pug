@@ -8,7 +8,7 @@ block content
                     .card-header
                         h3.text-center.font-weight-light.my-4 Inicio de Sesión
                     .card-body
-                        form
+                        form(action='https://backendalectrica.herokuapp.com/login')
                             .form-group
                                 label.small.mb-1(for='inputEmailAddress') Email
                                 input#inputEmailAddress.form-control.py-4(type='email', placeholder='Ingrese su dirección de email')
